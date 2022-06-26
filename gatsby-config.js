@@ -1,20 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `gatsby-project`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: "Andy's Blog",
+    description: "This is a blog's page about my journey as a web develop.",
   },
-  plugins: [{
-    resolve: 'gatsby-source-contentful',
-    options: {
-      "accessToken": "",
-      "spaceId": ""
-    }
-  }, "gatsby-transformer-remark", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+  plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
     },
-    __key: "pages"
-  }]
+  ],
 };
