@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <section className={styles.header}>
         <div>
-          <h2>Andrio Jaupaj</h2>
+          <h2>Andriol Jaupaj</h2>
           <h3>Full Stack Web Developer</h3>
         </div>
         <Img fluid={data.file.childImageSharp.fluid} />
